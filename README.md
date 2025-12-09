@@ -1,4 +1,4 @@
-# Pre-Entrega Automation Testing - Sergio Durelli
+# Entrega Automation Testing - Sergio Durelli
 
 ## Propósito del Proyecto
 
