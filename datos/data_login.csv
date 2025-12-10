@@ -1,0 +1,4 @@
+usuario,password,debe_loguear
+standard_user,secret_sauce,true
+admin,1234,false
+root,malaclave,false

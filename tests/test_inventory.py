@@ -1,10 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-def test_inventory(login_with_driver):
+def test_inventory(login_in_driver):
 
     try:
-        driver = login_with_driver
+        driver = login_in_driver
 
         # Compruebo el Título de la pestaña
         assert driver.title == "Swag Labs", "El título de la pastaña no es Swag Labs."

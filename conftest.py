@@ -1,7 +1,6 @@
 import pytest
-import tempfile
 from selenium import webdriver
-from utils import login
+from pages.login_page import LoginPage
 
 @pytest.fixture
 def driver():
@@ -24,6 +23,6 @@ def driver():
     driver.quit()
 
 @pytest.fixture
-def login_with_driver(driver):
-    login(driver)
+def login_in_driver(driver,usuario,password):
+    LoginPage(driver).abrir_pagina().login_completo(usuario,password)
     return driver
