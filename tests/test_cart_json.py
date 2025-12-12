@@ -4,6 +4,7 @@ import pytest
 
 from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
+from pages.login_page import LoginPage
 from utils.lector_json import read_json_products
 
 import time
@@ -15,6 +16,7 @@ RUTA_JSON = "datos/productos.json" #constante con ruta del archivo
 def test_cart_json(login_in_driver,usuario,password,name_product):
     try:
         driver = login_in_driver
+        LoginPage(driver).login_completo(usuario,password)
         inventory_page = InventoryPage(driver)
 
         # Agregar al carrito el producto

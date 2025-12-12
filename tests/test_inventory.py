@@ -3,12 +3,14 @@ from selenium.webdriver.common.by import By
 import pytest
 
 from pages.inventory_page import InventoryPage
+from pages.login_page import LoginPage
 
 @pytest.mark.parametrize("usuario,password",[("standard_user","secret_sauce")])
 def test_inventory(login_in_driver,usuario,password):
 
     try:
         driver = login_in_driver
+        LoginPage(driver).login_completo(usuario,password)
         # Instanciar pagina con funciones desde la clase
         inventory_page = InventoryPage(driver)
 

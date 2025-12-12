@@ -18,7 +18,8 @@ def test_login_valid(login_in_driver,usuario,password,debe_loguear):
 
     try:
         # Usamos funcion login
-        driver = login_in_driver   
+        driver = login_in_driver
+        LoginPage(driver).login_completo(usuario,password)
 
         # prueba de usuario bien
         if debe_loguear:
