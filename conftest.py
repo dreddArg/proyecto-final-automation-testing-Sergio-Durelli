@@ -18,6 +18,12 @@ def driver():
     # Sesion en modo incognito, impide pop-up de contraseña insegura
     options.add_argument("--incognito")
 
+    # Argumentos para GitHub
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--headless=new")
+
     # Definimos navegador con opciones cargadas
     driver = webdriver.Chrome(options=options)
 
