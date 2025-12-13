@@ -3,7 +3,8 @@ import pytest
 from utils.logger import logger
 
 # request de usuario ID 2
-def test_get_user(url_base,header_request):
+#@pytest.mark.skipif(reason="API demasiado lenta")
+def test_api_get_user(url_base,header_request):
     logger.info(f"API: Solitud GET de usuario ID 2 a: {url_base}/2")
     response = requests.get(f"{url_base}/2",headers=header_request)
 
@@ -17,7 +18,8 @@ def test_get_user(url_base,header_request):
     logger.info("API: Id 2 validado")
     
 # request para crear usuario
-def test_create_user(url_base,header_request):
+#@pytest.mark.skipif(reason="API demasiado lenta")
+def test_api_create_user(url_base,header_request):
     payload={
         "name": "Jose",
         "job": "Profesor"
@@ -34,8 +36,9 @@ def test_create_user(url_base,header_request):
     assert data["name"] == payload["name"]
 
 # request de Eliminar usuario
-def test_delete_user(url_base,header_request):
-    logger.info(f"API: Solitud POST para eliminar usuario 2")
+#@pytest.mark.skipif(reason="API demasiado lenta")
+def test_api_delete_user(url_base,header_request):
+    logger.info(f"API: Solitud DELETE para eliminar usuario 2")
     response = requests.delete(f"{url_base}/2",headers=header_request)
 
     logger.info(f"API: Prueba de status code: {response.status_code} = 204")
