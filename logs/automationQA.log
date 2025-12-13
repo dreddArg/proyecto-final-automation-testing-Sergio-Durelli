@@ -1,0 +1,70 @@
+2025-12-12 22:01:49 INFO AutoQA test_api_get_user: API: Solitud GET de usuario ID 2 a: https://reqres.in/api/users/2
+2025-12-12 22:02:17 INFO AutoQA test_api_get_user: API: Status code: 200 = 200
+2025-12-12 22:02:17 INFO AutoQA test_api_get_user: API: Response 200 OK
+2025-12-12 22:02:17 INFO AutoQA test_api_get_user: API: Validando el id 2 dentro de la respuesta
+2025-12-12 22:02:17 INFO AutoQA test_api_get_user: API: Id 2 validado
+2025-12-12 22:02:17 INFO AutoQA test_api_create_user: API: Solitud POST para crear usuario
+2025-12-12 22:02:19 INFO AutoQA test_api_create_user: API: Status code: 201 = 201
+2025-12-12 22:02:19 INFO AutoQA test_api_create_user: API: Prueba de name en payload vs recibido de la API
+2025-12-12 22:02:19 INFO AutoQA test_api_delete_user: API: Solitud DELETE para eliminar usuario 2
+2025-12-12 22:03:23 INFO AutoQA test_api_delete_user: API: Prueba de status code: 204 = 204
+2025-12-12 22:03:24 INFO AutoQA test_cart: Iniciando login con los datos de usuario: standard_user y password: secret_sauce
+2025-12-12 22:03:27 INFO AutoQA test_cart: Intento de login completado
+2025-12-12 22:03:27 INFO AutoQA test_cart: Prueba de agregar a carrito primer producto
+2025-12-12 22:03:27 INFO AutoQA test_cart: Agregado completado
+2025-12-12 22:03:27 INFO AutoQA test_cart: Apertura de carrito
+2025-12-12 22:03:27 INFO AutoQA test_cart: Prueba de 1 producto en carrito
+2025-12-12 22:03:27 INFO AutoQA test_cart: Verificacion completada, productos en carrito: 1
+2025-12-12 22:03:30 INFO AutoQA test_cart_json: Iniciando login con los datos de usuario: standard_user y password: secret_sauce
+2025-12-12 22:03:33 INFO AutoQA test_cart_json: Intento de login completado
+2025-12-12 22:03:33 INFO AutoQA test_cart_json: Prueba de agregar producto de nombre: Sauce Labs Backpack
+2025-12-12 22:03:33 INFO AutoQA test_cart_json: Agregado completado
+2025-12-12 22:03:33 INFO AutoQA test_cart_json: Apertura de carrito
+2025-12-12 22:03:34 INFO AutoQA test_cart_json: Prueba de productos: Sauce Labs Backpack = Sauce Labs Backpack
+2025-12-12 22:03:34 INFO AutoQA test_cart_json: Verificacion completada.
+2025-12-12 22:03:37 INFO AutoQA test_cart_json: Iniciando login con los datos de usuario: standard_user y password: secret_sauce
+2025-12-12 22:03:39 INFO AutoQA test_cart_json: Intento de login completado
+2025-12-12 22:03:39 INFO AutoQA test_cart_json: Prueba de agregar producto de nombre: Sauce Labs Bike Light
+2025-12-12 22:03:40 INFO AutoQA test_cart_json: Agregado completado
+2025-12-12 22:03:40 INFO AutoQA test_cart_json: Apertura de carrito
+2025-12-12 22:03:41 INFO AutoQA test_cart_json: Prueba de productos: Sauce Labs Bike Light = Sauce Labs Bike Light
+2025-12-12 22:03:41 INFO AutoQA test_cart_json: Verificacion completada.
+2025-12-12 22:03:44 INFO AutoQA test_cart_json: Iniciando login con los datos de usuario: standard_user y password: secret_sauce
+2025-12-12 22:03:46 INFO AutoQA test_cart_json: Intento de login completado
+2025-12-12 22:03:46 INFO AutoQA test_cart_json: Prueba de agregar producto de nombre: Sauce Labs Bolt T-Shirt
+2025-12-12 22:03:46 INFO AutoQA test_cart_json: Agregado completado
+2025-12-12 22:03:46 INFO AutoQA test_cart_json: Apertura de carrito
+2025-12-12 22:03:47 INFO AutoQA test_cart_json: Prueba de productos: Sauce Labs Bolt T-Shirt = Sauce Labs Bolt T-Shirt
+2025-12-12 22:03:47 INFO AutoQA test_cart_json: Verificacion completada.
+2025-12-12 22:03:51 INFO AutoQA test_inventory: Iniciando login con los datos de usuario: standard_user y password: secret_sauce
+2025-12-12 22:03:53 INFO AutoQA test_inventory: Intento de login completado
+2025-12-12 22:03:53 INFO AutoQA test_inventory: Prueba de productos listados mayor a cero
+2025-12-12 22:03:53 INFO AutoQA test_inventory: Productos listados: 6
+2025-12-12 22:03:53 INFO AutoQA test_inventory: Prueba de carrito vacio al ingresar
+2025-12-12 22:04:14 INFO AutoQA test_inventory: Items en el carrito: 0
+2025-12-12 22:04:14 INFO AutoQA test_inventory: Prueba agregar primer producto al carrito
+2025-12-12 22:04:14 INFO AutoQA test_inventory: Items en el carrito: 1
+2025-12-12 22:04:18 INFO AutoQA test_login: Iniciando login con los datos de usuario: standard_user y password: secret_sauce
+2025-12-12 22:04:20 INFO AutoQA test_login: Intento de login completado
+2025-12-12 22:04:20 INFO AutoQA test_login: Prueba de redireccionamiento a web inventario
+2025-12-12 22:04:20 INFO AutoQA test_login: Login y redireccionamiento correcto.
+2025-12-12 22:04:24 INFO AutoQA test_login: Iniciando login con los datos de usuario: admin y password: 1234
+2025-12-12 22:04:26 INFO AutoQA test_login: Intento de login completado
+2025-12-12 22:04:26 INFO AutoQA test_login: Verificación de login incorrecto
+2025-12-12 22:04:26 INFO AutoQA test_login: Prueba de login incorrecto completado
+2025-12-12 22:04:29 INFO AutoQA test_login: Iniciando login con los datos de usuario: root y password: malaclave
+2025-12-12 22:04:32 INFO AutoQA test_login: Intento de login completado
+2025-12-12 22:04:32 INFO AutoQA test_login: Verificación de login incorrecto
+2025-12-12 22:04:32 INFO AutoQA test_login: Prueba de login incorrecto completado
+2025-12-12 22:04:35 INFO AutoQA test_login_faker: Iniciando login con los datos de usuario: aperez y password: G)1N!gw2
+2025-12-12 22:04:37 INFO AutoQA test_login_faker: Intento de login completado
+2025-12-12 22:04:37 INFO AutoQA test_login_faker: Verificación de login incorrecto
+2025-12-12 22:04:37 INFO AutoQA test_login_faker: Prueba de login incorrecto completado
+2025-12-12 22:04:41 INFO AutoQA test_login_faker: Iniciando login con los datos de usuario: michaelsmith y password: dn0r1JVeP+
+2025-12-12 22:04:43 INFO AutoQA test_login_faker: Intento de login completado
+2025-12-12 22:04:43 INFO AutoQA test_login_faker: Verificación de login incorrecto
+2025-12-12 22:04:43 INFO AutoQA test_login_faker: Prueba de login incorrecto completado
+2025-12-12 22:04:47 INFO AutoQA test_login_faker: Iniciando login con los datos de usuario: lauren34 y password: $(*p5kMj_d
+2025-12-12 22:04:49 INFO AutoQA test_login_faker: Intento de login completado
+2025-12-12 22:04:49 INFO AutoQA test_login_faker: Verificación de login incorrecto
+2025-12-12 22:04:49 INFO AutoQA test_login_faker: Prueba de login incorrecto completado
