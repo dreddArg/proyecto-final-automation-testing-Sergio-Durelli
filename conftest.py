@@ -7,7 +7,7 @@ import pathlib
 from datetime import datetime
 #import time
 
-target = pathlib.Path("reports/screens")
+target = pathlib.Path("reports/screenshots")
 target.mkdir(parents=True, exist_ok=True) # parents=True crea carpetas necesarias hasta la carpeta final
 
 @pytest.fixture
