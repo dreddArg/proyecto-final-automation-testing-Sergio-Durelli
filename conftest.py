@@ -47,7 +47,7 @@ def url_base():
 
 @pytest.fixture
 def header_request():
-    return {"x-api-key": "reqres_29469299270f461db0088a385a1eda7f"}
+    return {"x-api-key": "asdasd-key"}
 
 @pytest.hookimpl(hookwrapper=True) # hookwrapper, ejecuta el test e incorpora el codigo de captura de pantalla dentro del test
 def pytest_runtest_makereport(item,call): # item es el test y fixtures que ejecuta, call informacion
